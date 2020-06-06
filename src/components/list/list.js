@@ -39,6 +39,7 @@ class List extends React.Component {
       totalPages: response.totalPages,
     });
   };
+  
 
   renderChangePercent = (percent) => {
     if (percent > 0) {

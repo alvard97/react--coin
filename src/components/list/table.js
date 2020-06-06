@@ -3,9 +3,8 @@ import React from 'react';
 
 
 const Table =({currencies, renderChangePercent})=> {
-   
-    
-    return (
+
+  return (
         <div className="Table-container">
         <table className="Table">
           <thead className="Table-head">
