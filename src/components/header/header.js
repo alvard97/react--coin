@@ -1,12 +1,17 @@
 import React from "react";
 import logo from "./logo.png";
-//ete logo enq qcum petqa import anenq
+import {Link} from 'react-router-dom';
+//ete logo e nq qcum petqa import anenq
 import "./header.css";
 
 const Header = () => {
   return (
     <div className="Header">
-      <img src={logo} alt="logo" className="Header-logo" />
+      <Link to='/'>
+
+       <img src={logo} alt="logo" className="Header-logo" />
+
+      </Link>
     </div>
   );
 };
