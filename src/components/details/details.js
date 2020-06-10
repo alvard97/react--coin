@@ -5,7 +5,7 @@ import renderChangePercent from '../../helpers/renderChangePercent';
 import './details.css';
 
 
-class Details extends React.Component{
+class Details extends React.PureComponent{
     constructor(){
         super();
         this.state ={
@@ -23,8 +23,14 @@ class Details extends React.Component{
             loading: false
         })
         
-    
-        
+    }
+
+    componentDidUpdate(prevProps, prevState){
+      if(prevProps.match.params.id !== this.props.match.params.id){
+        this.getCurrency();
+      }
+
+
     }
 
     
